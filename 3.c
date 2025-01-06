@@ -10,17 +10,16 @@ int main()
 	int n;
 	printf("Enter number of students: ");
 	scanf("%d",&n);
-	getchar();
 	struct student stu[n];
 	for(i=0; i<n; i++)
 	{
-		printf("Enter name of stu:");
-		gets(stu[i].name);
-		printf("Enter roll: ");
+		printf("Enter roll of stu:");
 		scanf("%d",&stu[i].roll);
+		getchar();
+		printf("Enter name: ");
+		gets(stu[i].name);
 		printf("Enter marks: ");
 		scanf("%f",&stu[i].marks);
-		getchar();
 	}
 	
 	printf("Details: \n");
